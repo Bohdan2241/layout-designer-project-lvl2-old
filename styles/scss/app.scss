@@ -1,0 +1,9 @@
+@import 'variables';
+
+body {
+  background-color: $test;
+
+  h1 {
+    color: $longName;
+  }
+}
