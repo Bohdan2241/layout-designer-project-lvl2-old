@@ -1,7 +1,35 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const rename = require('gulp-rename');
+const stylelint = require('gulp-stylelint');
+const htmlhint = require('gulp-htmlhint');
 const sync = require('browser-sync');
+
+// Stylelint
+
+const lintStyles = () => {
+  return gulp.src('./styles/scss/**/*.scss')
+    .pipe(stylelint({
+      reporters: [
+        {
+          formatter: 'string',
+          console: true
+        }
+      ]
+    }))
+};
+
+exports.lintStyles = lintStyles;
+
+// Htmlhint
+
+const lintHtml = () => {
+  return gulp.src('./*.html')
+    .pipe(htmlhint('.htmlhintrc'))
+    .pipe(htmlhint.reporter('htmlhint-stylish'))
+};
+
+exports.lintHtml = lintHtml;
 
 // Styles
 
@@ -32,8 +60,8 @@ exports.server = server;
 // Watch
 
 const watch = () => {
-  gulp.watch('./*.html').on('change', sync.reload);
-  gulp.watch('./styles/scss/**/*.scss', gulp.series(styles));
+  gulp.watch('./*.html', lintHtml).on('change', sync.reload);
+  gulp.watch('./styles/scss/**/*.scss', gulp.series(styles, lintStyles));
 };
 
 exports.watch = watch;
@@ -43,7 +71,11 @@ exports.watch = watch;
 exports.default = gulp.series(
   styles,
   gulp.parallel(
-    watch,
-    server,
+    lintHtml,
+    lintStyles
   ),
+  gulp.parallel(
+    watch,
+    server
+  )
 );
