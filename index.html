@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -8,8 +8,46 @@
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 
-<body>
-  <h1>hey Hello</h1>
+<body class="page__body">
+  <div class="wrap-header">
+    <div class="container">
+      <header class="header pt25">
+        <a href="index.html" class="logo">
+          <img class="logo__image" src="images/logo.svg" alt="">
+          <p class="logo__name">Music Box</p>
+        </a>
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="index.html" class="menu__link menu__link--current">
+                Главная
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link">
+                Каталог
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="artist.html" class="menu__link">
+                Исполнители
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <form id="search" class="header__search search" role="search">
+          <input class="search__input" name="search" type="search" placeholder="Поиск...">
+        </form>
+      </header>
+    </div>
+  </div>
+
+
 </body>
 
 </html>

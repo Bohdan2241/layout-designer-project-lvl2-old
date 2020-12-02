@@ -10,6 +10,7 @@ const sync = require('browser-sync');
 const lintStyles = () => {
   return gulp.src('./styles/scss/**/*.scss')
     .pipe(stylelint({
+      failAfterError: false,
       reporters: [
         {
           formatter: 'string',

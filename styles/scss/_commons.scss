@@ -1,0 +1,30 @@
+// Page
+
+.page {
+  font-family: $font-roboto-regular;
+  line-height: 1;
+}
+
+.page__body {
+  margin: 0;
+
+  background-color: $dark;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

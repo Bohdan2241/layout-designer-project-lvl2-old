@@ -1,0 +1,12 @@
+// Wrap-header
+
+.wrap-header {
+  height: 100vh;
+
+  font-family: $font-roboto-bold;
+
+  background-image: url(../images/banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

@@ -1,1 +1,13 @@
+// Golbal
+@import 'fonts';
+@import 'box-model';
 @import 'variables';
+@import 'atomic';
+@import 'commons';
+
+// Blocks
+@import 'blocks/wrap-header';
+@import 'blocks/header';
+@import 'blocks/logo';
+@import 'blocks/menu';
+@import 'blocks/search';
