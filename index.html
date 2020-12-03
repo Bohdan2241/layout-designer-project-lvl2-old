@@ -9,17 +9,17 @@
 </head>
 
 <body class="page__body">
-  <div class="wrap-header">
+  <div class="background-image">
     <div class="container">
       <header class="header pt25">
-        <a href="index.html" class="logo">
-          <img class="logo__image" src="images/logo.svg" alt="">
+        <a href="./" class="logo">
+          <img class="logo__image" src="./images/logo.svg" alt="">
           <p class="logo__name">Music Box</p>
         </a>
         <nav class="header__menu menu">
           <ul class="menu__list">
             <li class="menu__item">
-              <a href="index.html" class="menu__link menu__link--current">
+              <a href="./" class="menu__link menu__link--current">
                 Главная
               </a>
             </li>
@@ -44,6 +44,25 @@
           <input class="search__input" name="search" type="search" placeholder="Поиск...">
         </form>
       </header>
+
+      <div class="banner mt220 pb250">
+        <h1 class="h1">
+          Онлайн музыка где угодно
+        </h1>
+        <p class="no-limits mt10">без ограничений</p>
+        <p class="descrtiption mt45">
+          Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки
+        </p>
+
+        <form class="get-access mt40">
+          <input class="name__input" type="text" placeholder="Имя" required>
+          <input class="email__input" type="email" placeholder="Email" required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+          <button class="btn btn--green btn__get-access" type="submit">
+            Получить доступ
+          </button>
+        </form>
+      </div>
     </div>
   </div>
 

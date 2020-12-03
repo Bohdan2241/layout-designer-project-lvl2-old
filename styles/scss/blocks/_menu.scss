@@ -13,6 +13,8 @@
 }
 
 .menu__link {
+  display: block;
+
   color: $secondary-grey;
   font-size: 11px;
   text-transform: uppercase;
