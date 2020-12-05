@@ -3,12 +3,9 @@
 @import 'box-model';
 @import 'variables';
 @import 'atomic';
-@import 'commons';
+@import 'common';
 
 // Blocks
-@import 'blocks/wrap-header';
+@import 'blocks/background-intro';
 @import 'blocks/header';
-@import 'blocks/logo';
-@import 'blocks/menu';
-@import 'blocks/search';
-@import 'blocks/banner';
+@import 'blocks/intro';

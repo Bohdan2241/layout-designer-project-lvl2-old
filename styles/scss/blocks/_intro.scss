@@ -1,0 +1,102 @@
+// Intro
+
+.intro {
+  color: $white;
+  text-align: center;
+}
+
+.h1 {
+  font-weight: inherit;
+
+  text-transform: uppercase;
+
+  @media screen and (min-width: 991px) {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  @media screen and (max-width: 990px) {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
+.subtitle {
+  text-transform: uppercase;
+
+  @media screen and (min-width: 991px) {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  @media screen and (max-width: 990px) {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+.descrtiption {
+  @media screen and (min-width: 991px) {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  @media screen and (max-width: 990px) {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+.get-access {
+  display: grid;
+  gap: 30px;
+  justify-content: center;
+
+  @media screen and (min-width: 769px) {
+    grid-template-columns: min-content min-content;
+  }
+}
+
+.get-access__btn {
+  @media screen and (min-width: 769px) {
+    grid-column: span 2;
+  }
+}
+
+.name-input,
+.email-input {
+  padding: 15px 18px;
+
+  color: $white;
+  font-size: 14px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+
+  border-radius: 3px;
+
+  @media screen and (min-width: 769px) {
+    min-width: 270px;
+  }
+
+  @media screen and (max-width: 768px) {
+    min-width: 280px;
+  }
+}
+
+.name-input::placeholder,
+.email-input::placeholder {
+  color: $white;
+}
+
+.btn--green {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  color: $white;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  background-color: $green;
+  border-radius: 5px;
+}

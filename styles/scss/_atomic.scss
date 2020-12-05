@@ -1,5 +1,17 @@
 // atomic css
 
+.d-flex {
+  display: flex;
+}
+
+.fw700 {
+  font-weight: 700;
+}
+
+.p0 {
+  padding: 0;
+}
+
 .pt25 {
   padding-top: 25px;
 }
@@ -8,18 +20,22 @@
   padding-bottom: 250px;
 }
 
-.mt220 {
-  margin-top: 220px;
+.m0 {
+  margin: 0;
 }
 
-.mt45 {
-  margin-top: 45px;
+.mt10 {
+  margin-top: 10px;
 }
 
 .mt40 {
   margin-top: 40px;
 }
 
-.mt10 {
-  margin-top: 10px;
+.mt45 {
+  margin-top: 45px;
+}
+
+.mt220 {
+  margin-top: 220px;
 }
