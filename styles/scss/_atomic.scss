@@ -4,8 +4,16 @@
   display: flex;
 }
 
+.jc-sb {
+  justify-content: space-between;
+}
+
 .fw700 {
   font-weight: 700;
+}
+
+.list-none {
+  list-style: none;
 }
 
 .p0 {
@@ -16,8 +24,12 @@
   padding-top: 25px;
 }
 
-.pb250 {
-  padding-bottom: 250px;
+.pt80 {
+  padding-top: 80px;
+}
+
+.pb100 {
+  padding-bottom: 100px;
 }
 
 .m0 {
@@ -28,14 +40,18 @@
   margin-top: 10px;
 }
 
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+
 .mt40 {
   margin-top: 40px;
 }
 
 .mt45 {
   margin-top: 45px;
-}
-
-.mt220 {
-  margin-top: 220px;
 }
