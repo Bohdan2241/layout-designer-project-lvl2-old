@@ -111,57 +111,57 @@ body {
   text-decoration: none;
   column-gap: 4px; }
 
-.logo__image {
+.logo-image {
   width: 19px;
   height: 17px; }
 
-.logo__name {
+.logo-name {
   align-self: center;
   color: #fff;
   font-size: 11px;
   text-transform: uppercase; }
 
 @media screen and (min-width: 991px) {
-  .header__menu {
+  .header-menu {
     align-self: center; } }
 
 @media screen and (max-width: 990px) {
-  .header__menu {
+  .header-menu {
     order: 2; } }
 
-.header__menu .menu__list {
+.header-menu .menu-list {
   display: grid;
   list-style: none; }
   @media screen and (min-width: 991px) {
-    .header__menu .menu__list {
+    .header-menu .menu-list {
       grid-template-columns: repeat(4, min-content);
       column-gap: 36px; } }
   @media screen and (max-width: 990px) {
-    .header__menu .menu__list {
+    .header-menu .menu-list {
       grid-template-rows: repeat(4, min-content);
       row-gap: 10px; } }
 
-.header__menu .menu__link {
+.header-menu .menu-link {
   color: #808080;
   font-size: 11px;
   text-transform: uppercase;
   text-decoration: none;
   transition: 0.2s; }
-  .header__menu .menu__link:hover {
+  .header-menu .menu-link:hover {
     color: #fff; }
 
 .search {
   width: 100%;
   max-width: 280px; }
 
-.search__input {
+.search-input {
   width: 100%;
   padding: 5px 14px;
   color: #808080;
   background-color: #3c3b3d;
   border-radius: 50px; }
 
-.search__input::placeholder {
+.search-input::placeholder {
   text-transform: uppercase; }
 
 .intro {
@@ -252,7 +252,7 @@ body {
       grid-template-columns: min-content min-content; } }
 
 @media screen and (min-width: 769px) {
-  .get-access__btn {
+  .btn-get-access {
     grid-column: span 2; } }
 
 .name-input,
@@ -303,14 +303,14 @@ body {
     .info {
       grid-template-rows: repeat(4, max-content);
       row-gap: 40px; } }
-  .info .info__list {
+  .info .info-list {
     display: grid;
     row-gap: 20px; }
   .info .h3 {
     color: #cacaca;
     font-size: 18px;
     line-height: 21px; }
-  .info .info__link {
+  .info .info-link {
     align-self: center;
     color: #cacaca;
     text-decoration: none; }
@@ -327,20 +327,20 @@ body {
 .support {
   grid-template-rows: repeat(5, max-content); }
 
-.footer__menu {
+.footer-menu {
   padding: 50px 0;
   border-top: 1px solid #eee; }
-  .footer__menu .menu__list {
+  .footer-menu .menu-list {
     display: grid; }
     @media screen and (min-width: 769px) {
-      .footer__menu .menu__list {
+      .footer-menu .menu-list {
         grid-template-columns: repeat(5, min-content);
         column-gap: 40px; } }
     @media screen and (max-width: 768px) {
-      .footer__menu .menu__list {
+      .footer-menu .menu-list {
         grid-template-rows: repeat(5, min-content);
         row-gap: 20px; } }
-  .footer__menu .menu__link {
+  .footer-menu .menu-link {
     color: #cacaca;
     font-size: 16px;
     line-height: 19px;

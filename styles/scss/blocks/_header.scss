@@ -29,12 +29,12 @@
   column-gap: 4px;
 }
 
-.logo__image {
+.logo-image {
   width: 19px;
   height: 17px;
 }
 
-.logo__name {
+.logo-name {
   align-self: center;
 
   color: $white;
@@ -46,7 +46,7 @@
 
 // Menu
 
-.header__menu {
+.header-menu {
   @media screen and (min-width: 991px) {
     align-self: center;
   }
@@ -55,7 +55,7 @@
     order: 2;
   }
 
-  .menu__list {
+  .menu-list {
     display: grid;
 
     list-style: none;
@@ -72,7 +72,7 @@
     }
   }
 
-  .menu__link {
+  .menu-link {
     color: $secondary-grey;
     font-size: 11px;
     text-transform: uppercase;
@@ -93,7 +93,7 @@
   max-width: 280px;
 }
 
-.search__input {
+.search-input {
   width: 100%;
   padding: 5px 14px;
 
@@ -103,6 +103,6 @@
   border-radius: 50px;
 }
 
-.search__input::placeholder {
+.search-input::placeholder {
   text-transform: uppercase;
 }

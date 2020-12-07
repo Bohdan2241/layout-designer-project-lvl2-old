@@ -28,7 +28,7 @@
     row-gap: 40px;
   }
 
-  .info__list {
+  .info-list {
     display: grid;
     row-gap: 20px;
   }
@@ -39,7 +39,7 @@
     line-height: 21px;
   }
 
-  .info__link {
+  .info-link {
     align-self: center;
 
     color: $light-grey;
@@ -65,12 +65,12 @@
 
 // Menu
 
-.footer__menu {
+.footer-menu {
   padding: 50px 0;
 
   border-top: 1px solid #eee;
 
-  .menu__list {
+  .menu-list {
     display: grid;
 
     @media screen and (min-width: 769px) {
@@ -86,7 +86,7 @@
     }
   }
 
-  .menu__link {
+  .menu-link {
     color: $light-grey;
     font-size: 16px;
     line-height: 19px;
