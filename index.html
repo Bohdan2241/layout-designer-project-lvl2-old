@@ -10,32 +10,34 @@
 </head>
 
 <body>
-  <div id="page-description" class="background-intro fw700">
+  <div id="page-description" class="background-intro">
     <div class="container">
       <header class="header pt25">
-        <a href="./" class="logo">
-          <img class="logo-image" src="./images/logo.svg" alt="">
-          <p class="logo-name m0">Music Box</p>
-        </a>
+        <div class="d-flex">
+          <a href="./" class="logo">
+            <img class="logo-image" src="./images/logo.svg" alt="">
+            <p class="logo-name m0">Music Box</p>
+          </a>
+        </div>
         <nav class="header-menu">
-          <ul class="menu-list m0 p0 list-none">
+          <ul class="header-menu-list m0 p0 list-none">
             <li class="d-flex">
-              <a href="./" class="menu-link">
+              <a href="./" class="header-menu-link">
                 Главная
               </a>
             </li>
             <li class="d-flex">
-              <a class="menu-link">
+              <a class="header-menu-link">
                 Каталог
               </a>
             </li>
             <li class="d-flex">
-              <a href="artist.html" class="menu-link">
+              <a href="artist.html" class="header-menu-link">
                 Исполнители
               </a>
             </li>
             <li class="d-flex">
-              <a class="menu-link">
+              <a class="header-menu-link">
                 Контакты
               </a>
             </li>
@@ -50,12 +52,12 @@
         <h1 class="h1 m0">
           Онлайн музыка где угодно
         </h1>
-        <p class="subtitle m0 mt10">без ограничений</p>
-        <p class="descrtiption m0 mt45">
+        <p class="subtitle m0">без ограничений</p>
+        <p class="descrtiption m0">
           Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки
         </p>
 
-        <form class="get-access mt40">
+        <form class="get-access">
           <input class="input name-input" type="text" placeholder="Имя" required>
           <input class="input email-input" type="email" placeholder="Email" required
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
@@ -67,128 +69,134 @@
     </div>
   </div>
 
-  <footer class="footer pt80">
+  <footer class="footer pt60">
     <div class="container">
-      <div class="info pb100">
-        <ul class="info-list about-us m0 p0 list-none">
-          <h3 class="h3 m0 mb10">О нас</h3>
-          <li class="d-flex">
-            <a href="#" class="info-link">
-              История компании
-            </a>
-          </li>
-          <li class="d-flex">
-            <a href="#" class="info-link">
-              Карьера
-            </a>
-          </li>
-          <li class="d-flex">
-            <a href="#" class="info-link">
-              Особенности
-            </a>
-          </li>
-          <li class="d-flex">
-            <a href="#" class="info-link">
-              Пресса
-            </a>
-          </li>
-        </ul>
-
-        <ul class="info-list support m0 p0 list-none">
-          <h3 class="h3 m0 mb10">Поддержка</h3>
-          <li class="d-flex">
-            <a href="#" class="info-link">
-              База знаний
-            </a>
-          </li>
-          <li class="d-flex">
-            <a href="#" class="info-link">
-              Тарифы
-            </a>
-          </li>
-          <li class="d-flex">
-            <a href="#" class="info-link">
-              Мобильное приложение
-            </a>
-          </li>
-          <li class="d-flex">
-            <a href="#" class="info-link">
-              Условия использования
-            </a>
-          </li>
-        </ul>
-
-        <ul class="info-list contacts m0 p0 list-none">
-          <h3 class="h3 m0 mb10">Контакты</h3>
-          <li class="d-flex">
-            <a href="mailto:hello@music.box" class="info-link">
-              hello@music.box
-            </a>
-          </li>
-          <li class="d-flex">
-            <a class="info-link">
-              Russia, Moscow. Music Box studio
-            </a>
-          </li>
-          <li class="d-flex">
-            <a href="tel:+74999999999" class="info-link">
-              + 7 499 999 99 99
-            </a>
-          </li>
-        </ul>
-
-        <ul class="info-list social m0 p0 list-none">
-          <h3 class="h3 m0 mb10">Подписывайтесь</h3>
-          <div class="d-flex jc-sb">
+      <div class="info pb75">
+        <section class="info-item">
+          <h3 class="h3 m0 mb16">О нас</h3>
+          <ul class="footer-info-list about-us m0 p0 list-none">
             <li class="d-flex">
-              <a href="#" class="info-link">
+              <a href="#" class="footer-info-link">
+                История компании
+              </a>
+            </li>
+            <li class="d-flex">
+              <a href="#" class="footer-info-link">
+                Карьера
+              </a>
+            </li>
+            <li class="d-flex">
+              <a href="#" class="footer-info-link">
+                Особенности
+              </a>
+            </li>
+            <li class="d-flex">
+              <a href="#" class="footer-info-link">
+                Пресса
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="info-item">
+          <h3 class="h3 m0 mb16">Поддержка</h3>
+          <ul class="footer-info-list support m0 p0 list-none">
+            <li class="d-flex">
+              <a href="#" class="footer-info-link">
+                База знаний
+              </a>
+            </li>
+            <li class="d-flex">
+              <a href="#" class="footer-info-link">
+                Тарифы
+              </a>
+            </li>
+            <li class="d-flex">
+              <a href="#" class="footer-info-link">
+                Мобильное приложение
+              </a>
+            </li>
+            <li class="d-flex">
+              <a href="#" class="footer-info-link">
+                Условия использования
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="info-item">
+          <h3 class="h3 m0 mb16">Контакты</h3>
+          <ul class="footer-info-list contacts m0 p0 list-none">
+            <li class="d-flex">
+              <a href="mailto:hello@music.box" class="footer-info-link">
+                hello@music.box
+              </a>
+            </li>
+            <li class="d-flex">
+              <a class="footer-info-link">
+                Russia, Moscow. Music Box studio
+              </a>
+            </li>
+            <li class="d-flex">
+              <a href="tel:+74999999999" class="footer-info-link">
+                + 7 499 999 99 99
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="info-item">
+          <h3 class="h3 m0 mb16">Подписывайтесь</h3>
+          <ul class="footer-info-list social m0 p0 list-none d-flex">
+            <li class="d-flex">
+              <a href="#" class="footer-info-link">
                 <img class="link-image" src="./images/Google+.png" alt="">
               </a>
             </li>
             <li class="d-flex">
-              <a href="#" class="info-link">
+              <a href="#" class="footer-info-link">
                 <img class="link-image" src="./images/Twitter.png" alt="">
               </a>
             </li>
             <li class="d-flex">
-              <a href="#" class="info-link">
+              <a href="#" class="footer-info-link">
                 <img class="link-image" src="./images/Facebook.png" alt="">
               </a>
             </li>
             <li class="d-flex">
-              <a href="#" class="info-link">
+              <a href="#" class="footer-info-link">
                 <img class="link-image" src="./images/Instagram.png" alt="">
               </a>
             </li>
-          </div>
-        </ul>
+          </ul>
+        </section>
       </div>
     </div>
     <nav class="footer-menu">
       <div class="container">
-        <ul class="menu-list m0 p0 list-none">
+        <ul class="footer-menu-list m0 p0 list-none">
           <li class="d-flex">
-            <a href="#" class="menu-link">
+            <a href="#" class="footer-menu-link">
               Магазин
             </a>
           </li>
           <li class="d-flex">
-            <a href="#" class="menu-link">
+            <a href="#" class="footer-menu-link">
               Обслуживание
             </a>
           </li>
           <li class="d-flex">
-            <a href="#" class="menu-link">
+            <a href="#" class="footer-menu-link">
               Блог
             </a>
           </li>
           <li class="d-flex">
-            <a href="#" class="menu-link">
+            <a href="#" class="footer-menu-link">
               Поддержка
             </a>
           </li>
           <li class="d-flex">
-            <a href="#" class="menu-link">
+            <a href="#" class="footer-menu-link">
               Контакты
             </a>
           </li>

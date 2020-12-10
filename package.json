@@ -1,7 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "fixstyle": "npx stylelint --fix ./styles/scss/**/*.scss"
   },
   "devDependencies": {
     "browser-sync": "^2.26.13",
@@ -15,6 +16,7 @@
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.18.0",
     "surge": "^0.21.7"
   },
   "dependencies": {}

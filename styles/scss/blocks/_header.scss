@@ -3,16 +3,16 @@
 .header {
   display: grid;
 
-  @media screen and (min-width: 991px) {
-    grid-template-columns: max-content 1fr 280px;
+  @media screen and (min-width: 930px) {
+    grid-template-columns: max-content 1fr max-content;
 
-    column-gap: 100px;
+    column-gap: 88px;
   }
 
-  @media screen and (max-width: 990px) {
-    grid-template-rows: max-content max-content 1fr;
+  @media screen and (max-width: 929px) {
+    grid-template-rows: max-content max-content max-content;
 
-    row-gap: 20px;
+    row-gap: 18px;
   }
 }
 
@@ -21,17 +21,17 @@
 .logo {
   display: grid;
 
-  grid-template-columns: max-content 1fr;
+  grid-template-columns: max-content max-content;
 
   align-self: center;
 
   text-decoration: none;
-  column-gap: 4px;
+  column-gap: 16px;
 }
 
 .logo-image {
-  width: 19px;
-  height: 17px;
+  width: 24px;
+  height: 24px;
 }
 
 .logo-name {
@@ -39,6 +39,7 @@
 
   color: $white;
 
+  font-weight: 700;
   font-size: 11px;
 
   text-transform: uppercase;
@@ -47,42 +48,40 @@
 // Menu
 
 .header-menu {
-  @media screen and (min-width: 991px) {
+  @media screen and (min-width: 930px) {
     align-self: center;
   }
+}
 
-  @media screen and (max-width: 990px) {
-    order: 2;
+.header-menu-list {
+  display: grid;
+
+  list-style: none;
+
+  @media screen and (min-width: 930px) {
+    grid-template-columns: repeat(4, min-content);
+
+    column-gap: 24px;
   }
 
-  .menu-list {
-    display: grid;
-
-    list-style: none;
-
-    @media screen and (min-width: 991px) {
-      grid-template-columns: repeat(4, min-content);
-
-      column-gap: 36px;
-    }
-
-    @media screen and (max-width: 990px) {
-      grid-template-rows: repeat(4, min-content);
-      row-gap: 10px;
-    }
+  @media screen and (max-width: 929px) {
+    grid-template-rows: repeat(4, min-content);
+    row-gap: 3px;
   }
+}
 
-  .menu-link {
-    color: $secondary-grey;
-    font-size: 11px;
-    text-transform: uppercase;
-    text-decoration: none;
+.header-menu-link {
+  color: $dark-grey;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 13px;
+  text-transform: uppercase;
+  text-decoration: none;
 
-    transition: 0.2s;
+  transition: 0.2s;
 
-    &:hover {
-      color: $white;
-    }
+  &:hover {
+    color: $white;
   }
 }
 
@@ -90,16 +89,24 @@
 
 .search {
   width: 100%;
-  max-width: 280px;
+
+  @media screen and (min-width: 930px) {
+    min-width: 248px;
+  }
+
+  @media screen and (max-width: 929px) {
+    max-width: 374px;
+  }
 }
 
 .search-input {
   width: 100%;
-  padding: 5px 14px;
+  padding: 5px 10px;
 
-  color: $secondary-grey;
+  color: #757575;
+  font-family: $font-arial;
 
-  background-color: #3c3b3d;
+  background-color: $dark;
   border-radius: 50px;
 }
 

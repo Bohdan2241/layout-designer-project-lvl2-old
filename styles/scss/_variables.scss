@@ -1,19 +1,60 @@
 // Variables
 
 $white: #fff;
-$dark: #08020d;
-$secondary-grey: #808080; // nav
-$grey: #8c8c8c; // main text
-$light-grey: #cacaca;
-$gradient: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+$black: #08020d;
+$grey: #e0e0e0;
+$dark-grey: #cacaca;
+$dark: #3c3b3d;
+$orange: #f89202;
+$brown: #95390c;
+$purple: #5328a1;
+$gradient: linear-gradient(265.08deg, $brown 14.9%, $purple 68.95%);
 $green: #34c176;
 
 $font-roboto: "Roboto", sans-serif;
+$font-arial: "Arial";
 
 // make vars for font size and media
+
+$font-size-h1: 60px;
+// 1440
 // 1280px
 // 1024px
 // 768px
-// 425px
-// 375px
-// 320px
+// 414px
+
+// example
+// $tablet: 768;
+// $large: 1024;
+// $desktop: 1280;
+
+// @mixin tablet {
+//   @media only screen and (min-width: $tablet * 1px) {
+//     @content;
+//   }
+// }
+
+// @mixin large {
+//   @media only screen and (min-width: $large * 1px) {
+//     @content;
+//   }
+// }
+
+// @mixin desktop {
+//   @media only screen and (min-width: $desktop * 1px) {
+//     @content;
+//   }
+// }
+
+// /* ===== Usage ===== */
+// h1 {
+//   font-size: 10px;
+
+//   @include tablet {
+//     font-size: 12px;
+//   }
+
+//   @include desktop {
+//     font-size: 20px;
+//   }
+// }

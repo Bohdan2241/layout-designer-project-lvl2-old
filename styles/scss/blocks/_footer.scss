@@ -9,13 +9,13 @@
 .info {
   display: grid;
 
-  @media screen and (min-width: 1150px) {
+  @media screen and (min-width: 1105px) {
     grid-template-columns: repeat(4, max-content);
 
     column-gap: 100px;
   }
 
-  @media screen and (min-width: 769px) and (max-width: 1149px) {
+  @media screen and (min-width: 769px) and (max-width: 1104px) {
     grid-template-columns: repeat(2, max-content);
 
     column-gap: 50px;
@@ -25,71 +25,66 @@
   @media screen and (max-width: 768px) {
     grid-template-rows: repeat(4, max-content);
 
-    row-gap: 40px;
+    row-gap: 30px;
   }
+}
 
-  .info-list {
-    display: grid;
-    row-gap: 20px;
-  }
+.h3 {
+  color: $white;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase;
+}
 
-  .h3 {
-    color: $light-grey;
-    font-size: 18px;
-    line-height: 21px;
-  }
+.footer-info-list {
+  display: flex;
+  flex-direction: column;
+}
 
-  .info-link {
-    align-self: center;
+.footer-info-link {
+  align-self: center;
 
-    color: $light-grey;
-    text-decoration: none;
-  }
+  color: $grey;
+  font-size: 16px;
+  line-height: 24px;
+
+  text-decoration: none;
 }
 
 .social {
-  grid-template-rows: repeat(2, max-content);
+  flex-direction: row;
 
-  column-gap: 20px;
-}
-
-.contacts {
-  grid-template-rows: repeat(4, max-content);
-  row-gap: 20px;
-}
-
-.about-us,
-.support {
-  grid-template-rows: repeat(5, max-content);
+  column-gap: 24px;
 }
 
 // Menu
 
 .footer-menu {
-  padding: 50px 0;
+  padding-top: 40px;
+  padding-bottom: 48px;
 
-  border-top: 1px solid #eee;
+  border-top: 1px solid $grey;
+}
 
-  .menu-list {
-    display: grid;
+.footer-menu-list {
+  display: grid;
 
-    @media screen and (min-width: 769px) {
-      grid-template-columns: repeat(5, min-content);
+  @media screen and (min-width: 769px) {
+    grid-template-columns: repeat(5, min-content);
 
-      column-gap: 40px;
-    }
-
-    @media screen and (max-width: 768px) {
-      grid-template-rows: repeat(5, min-content);
-
-      row-gap: 20px;
-    }
+    column-gap: 15px;
   }
 
-  .menu-link {
-    color: $light-grey;
-    font-size: 16px;
-    line-height: 19px;
-    text-decoration: none;
+  @media screen and (max-width: 768px) {
+    grid-template-rows: repeat(5, min-content);
+
+    row-gap: 16px;
   }
+}
+
+.footer-menu-link {
+  color: $grey;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
 }
