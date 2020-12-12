@@ -1,6 +1,13 @@
 // Common
 
+html {
+  height: 100%;
+}
+
 body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100%;
   margin: 0;
 
   font-family: $font-roboto;
@@ -10,7 +17,6 @@ body {
 }
 
 .container {
-  min-width: 414px;
   max-width: 1440px;
 
   margin: 0 auto;
@@ -26,12 +32,4 @@ body {
   @media screen and (max-width: 768px) {
     padding: 0 20px;
   }
-}
-
-.input,
-.btn {
-  padding: 0;
-
-  border: none;
-  cursor: pointer;
 }

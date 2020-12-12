@@ -12,22 +12,22 @@
 <body>
   <div id="page-description" class="background-intro">
     <div class="container">
-      <header class="header pt25">
+      <header class="header padding-top-25">
         <div class="d-flex">
           <a href="./" class="logo">
             <img class="logo-image" src="./images/logo.svg" alt="">
-            <p class="logo-name m0">Music Box</p>
+            <p class="logo-name margin-0">Music Box</p>
           </a>
         </div>
         <nav class="header-menu">
-          <ul class="header-menu-list m0 p0 list-none">
+          <ul class="header-menu-list margin-0 padding-0 list-none">
             <li class="d-flex">
-              <a href="./" class="header-menu-link">
+              <a href="./" class="header-menu-link header-menu-link-active">
                 Главная
               </a>
             </li>
             <li class="d-flex">
-              <a class="header-menu-link">
+              <a class="header-menu-link header-menu-link-disable">
                 Каталог
               </a>
             </li>
@@ -37,31 +37,31 @@
               </a>
             </li>
             <li class="d-flex">
-              <a class="header-menu-link">
+              <a class="header-menu-link header-menu-link-disable">
                 Контакты
               </a>
             </li>
           </ul>
         </nav>
         <form id="search" class="search" role="search">
-          <input class="input search-input" name="search" type="search" placeholder="Поиск...">
+          <input class="search-input" name="search" type="search" placeholder="Поиск...">
         </form>
       </header>
 
       <div class="intro">
-        <h1 class="h1 m0">
+        <h1 class="h1 margin-0">
           Онлайн музыка где угодно
         </h1>
-        <p class="subtitle m0">без ограничений</p>
-        <p class="descrtiption m0">
+        <p class="subtitle margin-0">без ограничений</p>
+        <p class="descrtiption margin-0">
           Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки
         </p>
 
         <form class="get-access">
-          <input class="input name-input" type="text" placeholder="Имя" required>
-          <input class="input email-input" type="email" placeholder="Email" required
+          <input class="form-input" type="text" placeholder="Имя" required>
+          <input class="form-input" type="email" placeholder="Email" required
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-          <button class="btn btn-green btn-get-access" type="submit">
+          <button class="btn-get-access btn-green" type="submit">
             Получить доступ
           </button>
         </form>
@@ -69,12 +69,14 @@
     </div>
   </div>
 
-  <footer class="footer pt60">
+  <main class="main"></main>
+
+  <footer class="footer padding-top-60">
     <div class="container">
-      <div class="info pb75">
-        <section class="info-item">
-          <h3 class="h3 m0 mb16">О нас</h3>
-          <ul class="footer-info-list about-us m0 p0 list-none">
+      <div class="info padding-bottom-75">
+        <section>
+          <h2 class="footer-title margin-0 margin-bottom-16">О нас</h2>
+          <ul class="footer-info-list margin-0 padding-0 list-none">
             <li class="d-flex">
               <a href="#" class="footer-info-link">
                 История компании
@@ -98,9 +100,9 @@
           </ul>
         </section>
 
-        <section class="info-item">
-          <h3 class="h3 m0 mb16">Поддержка</h3>
-          <ul class="footer-info-list support m0 p0 list-none">
+        <section>
+          <h2 class="footer-title margin-0 margin-bottom-16">Поддержка</h2>
+          <ul class="footer-info-list margin-0 padding-0 list-none">
             <li class="d-flex">
               <a href="#" class="footer-info-link">
                 База знаний
@@ -124,9 +126,9 @@
           </ul>
         </section>
 
-        <section class="info-item">
-          <h3 class="h3 m0 mb16">Контакты</h3>
-          <ul class="footer-info-list contacts m0 p0 list-none">
+        <section>
+          <h2 class="footer-title margin-0 margin-bottom-16">Контакты</h2>
+          <ul class="footer-info-list margin-0 padding-0 list-none">
             <li class="d-flex">
               <a href="mailto:hello@music.box" class="footer-info-link">
                 hello@music.box
@@ -145,9 +147,9 @@
           </ul>
         </section>
 
-        <section class="info-item">
-          <h3 class="h3 m0 mb16">Подписывайтесь</h3>
-          <ul class="footer-info-list social m0 p0 list-none d-flex">
+        <section>
+          <h2 class="footer-title margin-0 margin-bottom-16">Подписывайтесь</h2>
+          <ul class="footer-info-list social margin-0 padding-0 list-none d-flex">
             <li class="d-flex">
               <a href="#" class="footer-info-link">
                 <img class="link-image" src="./images/Google+.png" alt="">
@@ -174,7 +176,7 @@
     </div>
     <nav class="footer-menu">
       <div class="container">
-        <ul class="footer-menu-list m0 p0 list-none">
+        <ul class="footer-menu-list margin-0 padding-0 list-none">
           <li class="d-flex">
             <a href="#" class="footer-menu-link">
               Магазин

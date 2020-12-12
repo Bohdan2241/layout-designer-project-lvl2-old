@@ -71,7 +71,7 @@
 }
 
 .header-menu-link {
-  color: $dark-grey;
+  color: $grey;
   font-weight: 700;
   font-size: 11px;
   line-height: 13px;
@@ -80,8 +80,13 @@
 
   transition: 0.2s;
 
-  &:hover {
+  &:hover,
+  &-active {
     color: $white;
+  }
+
+  &-disable {
+    color: $dark-grey;
   }
 }
 
@@ -104,10 +109,14 @@
   padding: 5px 10px;
 
   color: #757575;
+  font-size: 13px;
   font-family: $font-arial;
 
   background-color: $dark;
+  border: none;
+
   border-radius: 50px;
+  cursor: pointer;
 }
 
 .search-input::placeholder {

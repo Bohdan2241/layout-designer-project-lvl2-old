@@ -6,8 +6,12 @@
   color: $white;
   text-align: center;
 
-  @media screen and (min-width: 930px) {
+  @media screen and (min-width: 1100px) {
     margin-top: 150px;
+  }
+
+  @media screen and (min-width: 930px) and (max-width: 1099px) {
+    margin-top: 130px;
   }
 
   @media screen and (min-width: 769px) and (max-width: 929px) {
@@ -83,7 +87,7 @@
 
 .get-access {
   display: grid;
-  gap: 30px;
+  gap: 24px;
   justify-content: center;
   margin-top: 16px;
 
@@ -93,13 +97,27 @@
 }
 
 .btn-get-access {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
   @media screen and (min-width: 769px) {
     grid-column: span 2;
   }
 }
 
-.name-input,
-.email-input {
+.btn-green {
+  color: $white;
+  font-size: 13px;
+  font-family: $font-arial;
+  text-transform: uppercase;
+
+  background-color: $green;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-input {
   padding: 15px 18px;
 
   color: $white;
@@ -109,9 +127,11 @@
   line-height: 16px;
 
   background-color: transparent;
+
   border: 2px solid $dark-grey;
 
   border-radius: 3px;
+  cursor: pointer;
 
   @media screen and (min-width: 769px) {
     min-width: 270px;
@@ -122,20 +142,6 @@
   }
 }
 
-.name-input::placeholder,
-.email-input::placeholder {
+.form-input::placeholder {
   color: $white;
-}
-
-.btn-green {
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-  color: $white;
-  font-size: 14px;
-  font-family: $font-arial;
-  text-transform: uppercase;
-
-  background-color: $green;
-  border-radius: 5px;
 }

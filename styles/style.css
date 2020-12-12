@@ -24,59 +24,40 @@
 .d-flex {
   display: flex; }
 
-.jc-sb {
-  justify-content: space-between; }
-
-.fw700 {
-  font-weight: 700; }
-
 .list-none {
   list-style: none; }
 
-.p0 {
+.padding-0 {
   padding: 0; }
 
-.pt25 {
+.padding-top-25 {
   padding-top: 25px; }
 
-.pt60 {
+.padding-top-60 {
   padding-top: 60px; }
 
-.pb75 {
+.padding-bottom-75 {
   padding-bottom: 75px; }
 
-.pb100 {
-  padding-bottom: 100px; }
-
-.m0 {
+.margin-0 {
   margin: 0; }
 
-.mt10 {
-  margin-top: 10px; }
-
-.mb10 {
-  margin-bottom: 10px; }
-
-.mb16 {
+.margin-bottom-16 {
   margin-bottom: 16px; }
 
-.mb30 {
-  margin-bottom: 30px; }
-
-.mt40 {
-  margin-top: 40px; }
-
-.mt45 {
-  margin-top: 45px; }
+html {
+  height: 100%; }
 
 body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100%;
   margin: 0;
   font-family: "Roboto", sans-serif;
   line-height: 1;
   background-color: #08020d; }
 
 .container {
-  min-width: 414px;
   max-width: 1440px;
   margin: 0 auto; }
   @media screen and (min-width: 1440px) {
@@ -88,12 +69,6 @@ body {
   @media screen and (max-width: 768px) {
     .container {
       padding: 0 20px; } }
-
-.input,
-.btn {
-  padding: 0;
-  border: none;
-  cursor: pointer; }
 
 .background-intro {
   background-image: url(../images/banner.jpg);
@@ -147,15 +122,17 @@ body {
       row-gap: 3px; } }
 
 .header-menu-link {
-  color: #cacaca;
+  color: #e0e0e0;
   font-weight: 700;
   font-size: 11px;
   line-height: 13px;
   text-transform: uppercase;
   text-decoration: none;
   transition: 0.2s; }
-  .header-menu-link:hover {
+  .header-menu-link:hover, .header-menu-link-active {
     color: #fff; }
+  .header-menu-link-disable {
+    color: #cacaca; }
 
 .search {
   width: 100%; }
@@ -170,9 +147,12 @@ body {
   width: 100%;
   padding: 5px 10px;
   color: #757575;
+  font-size: 13px;
   font-family: "Arial";
   background-color: #3c3b3d;
-  border-radius: 50px; }
+  border: none;
+  border-radius: 50px;
+  cursor: pointer; }
 
 .search-input::placeholder {
   text-transform: uppercase; }
@@ -181,9 +161,12 @@ body {
   padding-bottom: 200px;
   color: #fff;
   text-align: center; }
-  @media screen and (min-width: 930px) {
+  @media screen and (min-width: 1100px) {
     .intro {
       margin-top: 150px; } }
+  @media screen and (min-width: 930px) and (max-width: 1099px) {
+    .intro {
+      margin-top: 130px; } }
   @media screen and (min-width: 769px) and (max-width: 929px) {
     .intro {
       margin-top: 100px; } }
@@ -242,19 +225,31 @@ body {
 
 .get-access {
   display: grid;
-  gap: 30px;
+  gap: 24px;
   justify-content: center;
   margin-top: 16px; }
   @media screen and (min-width: 769px) {
     .get-access {
       grid-template-columns: min-content min-content; } }
 
-@media screen and (min-width: 769px) {
-  .btn-get-access {
-    grid-column: span 2; } }
+.btn-get-access {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  @media screen and (min-width: 769px) {
+    .btn-get-access {
+      grid-column: span 2; } }
 
-.name-input,
-.email-input {
+.btn-green {
+  color: #fff;
+  font-size: 13px;
+  font-family: "Arial";
+  text-transform: uppercase;
+  background-color: #34c176;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; }
+
+.form-input {
   padding: 15px 18px;
   color: #fff;
   font-weight: 700;
@@ -263,29 +258,17 @@ body {
   line-height: 16px;
   background-color: transparent;
   border: 2px solid #cacaca;
-  border-radius: 3px; }
+  border-radius: 3px;
+  cursor: pointer; }
   @media screen and (min-width: 769px) {
-    .name-input,
-    .email-input {
+    .form-input {
       min-width: 270px; } }
   @media screen and (max-width: 768px) {
-    .name-input,
-    .email-input {
+    .form-input {
       min-width: 374px; } }
 
-.name-input::placeholder,
-.email-input::placeholder {
+.form-input::placeholder {
   color: #fff; }
-
-.btn-green {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #fff;
-  font-size: 14px;
-  font-family: "Arial";
-  text-transform: uppercase;
-  background-color: #34c176;
-  border-radius: 5px; }
 
 .footer {
   background: linear-gradient(265.08deg, #95390c 14.9%, #5328a1 68.95%); }
@@ -306,7 +289,7 @@ body {
       grid-template-rows: repeat(4, max-content);
       row-gap: 30px; } }
 
-.h3 {
+.footer-title {
   color: #fff;
   font-size: 18px;
   line-height: 27px;
