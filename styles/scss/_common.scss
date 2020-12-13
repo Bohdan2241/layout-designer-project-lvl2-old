@@ -21,15 +21,15 @@ body {
 
   margin: 0 auto;
 
-  @media screen and (min-width: 1440px) {
+  @include media("screen", ">=large-desktop") {
     padding: 0 120px;
   }
 
-  @media screen and (min-width: 769px) and (max-width: 1439px) {
+  @include media("screen", ">tablet", "<large-desktop") {
     padding: 0 30px;
   }
 
-  @media screen and (max-width: 768px) {
+  @include media("screen", "<=tablet") {
     padding: 0 20px;
   }
 }

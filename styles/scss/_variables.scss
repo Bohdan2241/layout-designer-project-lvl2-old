@@ -14,47 +14,12 @@ $green: #34c176;
 $font-roboto: "Roboto", sans-serif;
 $font-arial: "Arial";
 
-// make vars for font size and media
+// 1440 max
+// 414px min
 
-$font-size-h1: 60px;
-// 1440
-// 1280px
-// 1024px
-// 768px
-// 414px
-
-// example
-// $tablet: 768;
-// $large: 1024;
-// $desktop: 1280;
-
-// @mixin tablet {
-//   @media only screen and (min-width: $tablet * 1px) {
-//     @content;
-//   }
-// }
-
-// @mixin large {
-//   @media only screen and (min-width: $large * 1px) {
-//     @content;
-//   }
-// }
-
-// @mixin desktop {
-//   @media only screen and (min-width: $desktop * 1px) {
-//     @content;
-//   }
-// }
-
-// /* ===== Usage ===== */
-// h1 {
-//   font-size: 10px;
-
-//   @include tablet {
-//     font-size: 12px;
-//   }
-
-//   @include desktop {
-//     font-size: 20px;
-//   }
-// }
+$breakpoints: (
+  tablet: 768px,
+  laptop: 930px,
+  desktop: 1100px,
+  large-desktop: 1440px
+);

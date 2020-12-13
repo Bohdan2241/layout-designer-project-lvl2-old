@@ -12,6 +12,7 @@
     "gulp-sass": "^4.1.0",
     "gulp-stylelint": "^13.0.0",
     "htmlhint-stylish": "^1.0.3",
+    "include-media": "^1.4.9",
     "stylelint": "^13.8.0",
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-standard": "^20.0.0",

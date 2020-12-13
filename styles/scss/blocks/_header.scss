@@ -3,13 +3,13 @@
 .header {
   display: grid;
 
-  @media screen and (min-width: 930px) {
+  @include media("screen", ">=laptop") {
     grid-template-columns: max-content 1fr max-content;
 
     column-gap: 88px;
   }
 
-  @media screen and (max-width: 929px) {
+  @include media("screen", "<laptop") {
     grid-template-rows: max-content max-content max-content;
 
     row-gap: 18px;
@@ -48,7 +48,7 @@
 // Menu
 
 .header-menu {
-  @media screen and (min-width: 930px) {
+  @include media("screen", ">=laptop") {
     align-self: center;
   }
 }
@@ -58,13 +58,13 @@
 
   list-style: none;
 
-  @media screen and (min-width: 930px) {
+  @include media("screen", ">=laptop") {
     grid-template-columns: repeat(4, min-content);
 
     column-gap: 24px;
   }
 
-  @media screen and (max-width: 929px) {
+  @include media("screen", "<laptop") {
     grid-template-rows: repeat(4, min-content);
     row-gap: 3px;
   }
@@ -95,11 +95,11 @@
 .search {
   width: 100%;
 
-  @media screen and (min-width: 930px) {
+  @include media("screen", ">=laptop") {
     min-width: 248px;
   }
 
-  @media screen and (max-width: 929px) {
+  @include media("screen", "<laptop") {
     max-width: 374px;
   }
 }

@@ -1,13 +1,14 @@
 // Golbal
-@import 'fonts';
-@import 'box-model';
-@import 'variables';
-@import 'atomic';
-@import 'common';
+@import "fonts";
+@import "box-model";
+@import "variables";
+@import "../../node_modules/include-media/dist/include-media"; // mixin for media
+@import "atomic";
+@import "common";
 
 // Blocks
-@import 'blocks/background-intro';
-@import 'blocks/header';
-@import 'blocks/intro';
+@import "blocks/background-intro";
+@import "blocks/header";
+@import "blocks/intro";
 //
-@import 'blocks/footer';
+@import "blocks/footer";
