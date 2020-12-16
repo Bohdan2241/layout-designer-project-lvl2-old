@@ -1,0 +1,125 @@
+// News
+
+.news {
+  color: $dark-grey;
+}
+
+.news-items {
+  display: grid;
+
+  gap: 65px;
+}
+
+.news-item {
+  display: flex;
+
+  column-gap: 50px;
+
+  @include media("<=laptop") {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.news-image {
+  @include media(">laptop") {
+    width: 100%;
+    min-width: 374px;
+    max-width: 575px;
+    max-height: 286px;
+    object-fit: cover;
+  }
+
+  @include media("<=laptop") {
+    width: 374px;
+    height: 186px;
+  }
+}
+
+.news-item:nth-child(even) .news-image {
+  order: 1;
+
+  @include media("<=laptop") {
+    order: 0;
+  }
+}
+
+.news-content {
+  max-width: 576px;
+
+  @include media("<=laptop") {
+    margin-top: 50px;
+  }
+}
+
+.news-title {
+  color: $white;
+  font-weight: 400;
+  text-transform: capitalize;
+
+  @include media(">laptop") {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  @include media("<=laptop") {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+.news-description {
+  font-size: 16px;
+  line-height: 24px;
+
+  @include media(">laptop") {
+    margin-top: 30px; // как можно разделить
+  }
+
+  @include media("<=laptop") {
+    margin-top: 16px;
+  }
+}
+
+.news-info {
+  display: flex;
+
+  margin-top: 24px;
+
+  column-gap: 16px;
+}
+
+.news-avatar {
+  width: 19px;
+  height: 19px;
+}
+
+.news-author {
+  color: $orange;
+  text-transform: uppercase;
+}
+
+.news-info-item {
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.btn-news {
+  display: inline-block;
+  margin-top: 48px;
+}
+
+.btn-news-grey {
+  padding: 16px 29px;
+
+  color: $dark-grey;
+  font-size: 13px;
+  line-height: 19px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border: 1px solid $dark-grey;
+  border-radius: 5px;
+}
+
+//

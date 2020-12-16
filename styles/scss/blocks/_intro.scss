@@ -6,19 +6,19 @@
   color: $white;
   text-align: center;
 
-  @include media("screen", ">=desktop") {
+  @include media(">=desktop") {
     margin-top: 150px;
   }
 
-  @include media("screen", ">=laptop", "<desktop") {
+  @include media(">=laptop", "<desktop") {
     margin-top: 130px;
   }
 
-  @include media("screen", ">tablet", "<laptop") {
+  @include media(">tablet", "<laptop") {
     margin-top: 100px;
   }
 
-  @include media("screen", "<=tablet") {
+  @include media("<=tablet") {
     margin-top: 80px;
   }
 }
@@ -26,22 +26,22 @@
 .h1 {
   text-transform: uppercase;
 
-  @include media("screen", ">=desktop") {
+  @include media(">=desktop") {
     font-size: 60px;
     line-height: 90px;
   }
 
-  @include media("screen", ">=laptop", "<desktop") {
+  @include media(">=laptop", "<desktop") {
     font-size: 50px;
     line-height: 70px;
   }
 
-  @include media("screen", ">tablet", "<laptop") {
+  @include media(">tablet", "<laptop") {
     font-size: 40px;
     line-height: 60px;
   }
 
-  @include media("screen", "<=tablet") {
+  @include media("<=tablet") {
     font-size: 30px;
     line-height: 45px;
   }
@@ -51,22 +51,22 @@
   font-weight: 700;
   text-transform: uppercase;
 
-  @include media("screen", ">=desktop") {
+  @include media(">=desktop") {
     font-size: 38px;
     line-height: 57px;
   }
 
-  @include media("screen", ">=laptop", "<desktop") {
+  @include media(">=laptop", "<desktop") {
     font-size: 30px;
     line-height: 40px;
   }
 
-  @include media("screen", ">tablet", "<laptop") {
+  @include media(">tablet", "<laptop") {
     font-size: 24px;
     line-height: 34px;
   }
 
-  @include media("screen", "<=tablet") {
+  @include media("<=tablet") {
     font-size: 18px;
     line-height: 27px;
   }
@@ -76,11 +76,11 @@
   font-size: 16px;
   line-height: 24px;
 
-  @include media("screen", ">tablet") {
+  @include media(">tablet") {
     margin-top: 32px;
   }
 
-  @include media("screen", "<=tablet") {
+  @include media("<=tablet") {
     margin-top: 16px;
   }
 }
@@ -91,7 +91,7 @@
   justify-content: center;
   margin-top: 16px;
 
-  @include media("screen", ">tablet") {
+  @include media(">tablet") {
     grid-template-columns: min-content min-content;
   }
 }
@@ -100,7 +100,7 @@
   padding-top: 20px;
   padding-bottom: 20px;
 
-  @include media("screen", ">tablet") {
+  @include media(">tablet") {
     grid-column: span 2;
   }
 }
@@ -133,11 +133,11 @@
   border-radius: 3px;
   cursor: pointer;
 
-  @include media("screen", ">tablet") {
+  @include media(">tablet") {
     min-width: 270px;
   }
 
-  @include media("screen", "<=tablet") {
+  @include media("<=tablet") {
     min-width: 374px;
   }
 }

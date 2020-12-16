@@ -1,0 +1,44 @@
+// Mobile-app
+
+.mobile-app {
+  display: flex;
+
+  @include media("<=laptop") {
+    flex-direction: column;
+    row-gap: 16px;
+  }
+}
+
+.mobile-app-content {
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  row-gap: 16px;
+
+  @include media("<=laptop") {
+    order: 2;
+  }
+}
+
+.mobile-app-text {
+  color: $dark-grey;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.btn-mobile-app {
+  padding: 17px 40px;
+
+  color: $white;
+  font-size: 13px;
+  line-height: 19px;
+  text-decoration: none;
+
+  background-color: $brown;
+  border-radius: 32px;
+}
+
+.mobile-app-image {
+  display: block;
+  margin: 0 auto;
+}
+//

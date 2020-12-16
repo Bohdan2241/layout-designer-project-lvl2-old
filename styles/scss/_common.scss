@@ -21,22 +21,36 @@ body {
 
   margin: 0 auto;
 
-  @include media("screen", ">=large-desktop") {
+  @include media(">=large-desktop") {
     padding: 0 120px;
   }
 
-  @include media("screen", ">tablet", "<large-desktop") {
+  @include media(">tablet", "<large-desktop") {
     padding: 0 30px;
   }
 
-  @include media("screen", "<=tablet") {
+  @include media("<=tablet") {
     padding: 0 20px;
   }
 }
 
 .main-title {
   color: $white;
-  font-size: 38px;
-  line-height: 57px;
+  text-align: center;
   text-transform: uppercase;
+
+  @include media(">desktop") {
+    font-size: 38px;
+    line-height: 57px;
+  }
+
+  @include media(">tablet", "<=desktop") {
+    font-size: 28px;
+    line-height: 47px;
+  }
+
+  @include media("<=tablet") {
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
