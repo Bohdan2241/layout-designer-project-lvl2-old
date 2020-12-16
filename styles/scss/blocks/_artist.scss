@@ -1,0 +1,75 @@
+// Artist
+
+.artist {
+  padding-bottom: 224px;
+
+  color: $white;
+
+  @include media(">laptop") {
+    margin-top: 200px;
+  }
+
+  @include media("<=laptop") {
+    margin-top: 55px;
+  }
+}
+
+.background-artist {
+  background-image: url("../images/Morten Harket.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.artist-subtitle {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.wrap-buttons {
+  display: flex;
+
+  margin-top: 48px;
+
+  @include media(">tablet") {
+    column-gap: 24px;
+  }
+
+  @include media("<=tablet") {
+    flex-direction: column;
+
+    row-gap: 24px;
+  }
+}
+
+.btn-artist {
+  width: 200px;
+  padding: 21px 31px;
+}
+
+.btn-artist-style {
+  color: $white;
+  font-size: 13px;
+  line-height: 19px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border-radius: 5px;
+}
+
+.btn-artist-purple {
+  background-color: $purple;
+}
+
+.btn-artist-brown {
+  background-color: $brown;
+}
+
+.btn-artist-image {
+  width: 20px;
+  height: 20px;
+  margin-right: 16px;
+
+  vertical-align: bottom;
+}
+//

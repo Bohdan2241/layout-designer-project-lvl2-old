@@ -1,0 +1,44 @@
+// Popular tracks
+
+.popular-tracks {
+  display: flex;
+  flex-wrap: wrap;
+
+  color: $grey;
+  font-size: 13px;
+  line-height: 19px;
+
+  row-gap: 25px;
+}
+
+.track {
+  display: grid;
+  grid-column-gap: 15px;
+  grid-template-columns: auto 1fr max-content;
+
+  width: 50%;
+  min-width: 374px;
+}
+
+.track-image {
+  width: 55px;
+  height: 55px;
+}
+
+.titles {
+  align-self: center;
+}
+
+.track-name {
+  color: $white;
+  font-weight: bold;
+}
+
+.track-time {
+  align-self: center;
+
+  @include media(">=808px") {
+    margin-right: 49px;
+  }
+}
+//

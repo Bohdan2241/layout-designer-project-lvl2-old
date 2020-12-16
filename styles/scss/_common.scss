@@ -34,9 +34,32 @@ body {
   }
 }
 
+.h1 {
+  text-transform: uppercase;
+
+  @include media(">=desktop") {
+    font-size: 60px;
+    line-height: 90px;
+  }
+
+  @include media(">=laptop", "<desktop") {
+    font-size: 50px;
+    line-height: 70px;
+  }
+
+  @include media(">tablet", "<laptop") {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  @include media("<=tablet") {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
 .main-title {
   color: $white;
-  text-align: center;
   text-transform: uppercase;
 
   @include media(">desktop") {
@@ -54,3 +77,48 @@ body {
     line-height: 27px;
   }
 }
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+
+  row-gap: 25px;
+}
+
+.item {
+  margin-right: 50px;
+}
+
+.item-image {
+  @include media(">laptop") {
+    width: 250px;
+    height: 250px;
+  }
+
+  @include media("<=laptop") {
+    width: 137px;
+    height: 137px;
+  }
+}
+
+.item-titles {
+  margin-top: 18px;
+
+  @include media("<=laptop") {
+    max-width: 137px;
+  }
+}
+
+.item-name {
+  color: $white;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.item-year {
+  color: $grey;
+  font-size: 16px;
+  line-height: 24px;
+}
+//

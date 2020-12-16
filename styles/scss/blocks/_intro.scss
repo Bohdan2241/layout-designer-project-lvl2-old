@@ -23,28 +23,11 @@
   }
 }
 
-.h1 {
-  text-transform: uppercase;
-
-  @include media(">=desktop") {
-    font-size: 60px;
-    line-height: 90px;
-  }
-
-  @include media(">=laptop", "<desktop") {
-    font-size: 50px;
-    line-height: 70px;
-  }
-
-  @include media(">tablet", "<laptop") {
-    font-size: 40px;
-    line-height: 60px;
-  }
-
-  @include media("<=tablet") {
-    font-size: 30px;
-    line-height: 45px;
-  }
+.background-intro {
+  background-image: url("../images/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .subtitle {

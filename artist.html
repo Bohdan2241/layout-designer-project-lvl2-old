@@ -10,11 +10,11 @@
 </head>
 
 <body>
-  <div id="page-description" class="background-intro">
+  <div id="page-description" class="background-artist">
     <div class="container">
       <header class="header padding-top-25">
         <div class="d-flex">
-          <a href="./" class="logo">
+          <a href="./index.html" class="logo">
             <img class="logo-image" src="./images/logo.svg" alt="">
             <p class="logo-name margin-0">Music Box</p>
           </a>
@@ -22,7 +22,7 @@
         <nav class="header-menu">
           <ul class="header-menu-list margin-0 padding-0 list-none">
             <li class="d-flex">
-              <a href="./" class="header-menu-link header-menu-link-active">
+              <a href="./index.html" class="header-menu-link">
                 Главная
               </a>
             </li>
@@ -32,7 +32,7 @@
               </a>
             </li>
             <li class="d-flex">
-              <a href="artist.html" class="header-menu-link">
+              <a href="artist.html" class="header-menu-link header-menu-link-active">
                 Исполнители
               </a>
             </li>
@@ -44,32 +44,299 @@
           </ul>
         </nav>
         <form id="search" class="search" role="search">
-          <input class="input search-input" name="search" type="search" placeholder="Поиск...">
+          <input class="search-input" name="search" type="search" placeholder="Поиск...">
         </form>
       </header>
 
-      <!-- <div class="intro">
+      <div class="artist">
         <h1 class="h1 margin-0">
-          Онлайн музыка где угодно
+          Morten Harket
         </h1>
-        <p class="subtitle margin-0">без ограничений</p>
-        <p class="descrtiption margin-0">
-          Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки
+        <p class="artist-subtitle margin-0 margin-top-16">
+          24 875 поклонников
         </p>
-
-        <form class="get-access">
-          <input class="input form-input" type="text" placeholder="Имя" required>
-          <input class="input form-input" type="email" placeholder="Email" required
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-          <button class="btn btn-green btn-get-access" type="submit">
-            Получить доступ
-          </button>
-        </form>
-      </div> -->
+        <div class="wrap-buttons">
+          <a href="#" class="btn-artist btn-artist-style btn-artist-purple">
+            <img class="btn-artist-image" src="./images/play-button.svg" alt="">
+            Микс
+          </a>
+          <a href="#" class="btn-artist btn-artist-style btn-artist-brown">
+            <img class="btn-artist-image" src="./images/heart.svg" alt="">
+            В ИЗБРАННОЕ
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 
-  <main class="main"></main>
+  <main class="padding-bottom-100">
+    <div class="container">
+      <section id="page-popular-track">
+        <h2 class="main-title margin-0 margin-top-100 margin-bottom-48">
+          Популярные треки
+        </h2>
+        <div class="popular-tracks">
+          <div class="track">
+            <img class="track-image" src="./images/Wild Seed.png" alt="">
+            <div class="titles">
+              <p class="track-name margin-0">
+                Spanish Step
+              </p>
+              <p class="track-author margin-0">
+                Morten Harket
+              </p>
+            </div>
+            <time class="track-time">
+              4:07
+            </time>
+          </div>
+
+          <div class="track">
+            <img class="track-image" src="./images/Brother.png" alt="">
+            <div class="titles">
+              <p class="track-name margin-0">
+                Brother
+              </p>
+              <p class="track-author margin-0">
+                Morten Harket
+              </p>
+            </div>
+            <time class="track-time">
+              5:05
+            </time>
+          </div>
+
+          <div class="track">
+            <img class="track-image" src="./images/Letter from Egypt.png" alt="">
+            <div class="titles">
+              <p class="track-name margin-0">
+                Darkspace
+              </p>
+              <p class="track-author margin-0">
+                Morten Harket
+              </p>
+            </div>
+            <time class="track-time">
+              3:45
+            </time>
+          </div>
+
+          <div class="track">
+            <img class="track-image" src="./images/Letter from Egypt.png" alt="">
+            <div class="titles">
+              <p class="track-name margin-0">
+                With You - With Me
+              </p>
+              <p class="track-author margin-0">
+                Morten Harket
+              </p>
+            </div>
+            <time class="track-time">
+              3:48
+            </time>
+          </div>
+
+          <div class="track">
+            <img class="track-image" src="./images/Wild Seed.png" alt="">
+            <div class="titles">
+              <p class="track-name margin-0">
+                Brodsky Tune
+              </p>
+              <p class="track-author margin-0">
+                Morten Harket
+              </p>
+            </div>
+            <time class="track-time">
+              4:24
+            </time>
+          </div>
+
+          <div class="track">
+            <img class="track-image" src="./images/Out of My Hands.png" alt="">
+            <div class="titles">
+              <p class="track-name margin-0">
+                Burn Money Burn
+              </p>
+              <p class="track-author margin-0">
+                Morten Harket
+              </p>
+            </div>
+            <time class="track-time">
+              3:52
+            </time>
+          </div>
+        </div>
+      </section>
+      <section id="page-discography">
+        <h2 class="main-title margin-0 margin-top-100 margin-bottom-48">
+          Дискография
+        </h2>
+        <div class="discographies items">
+          <div class="item">
+            <img class="item-image" src="./images/Brother.png" alt="">
+            <div class="item-titles">
+              <p class="item-name margin-0">
+                Brother
+              </p>
+              <p class="item-year margin-0">
+                2014
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img class="item-image" src="./images/Out of My Hands.png" alt="">
+            <div class="item-titles">
+              <p class="item-name margin-0">
+                Out Of My Hands
+              </p>
+              <p class="item-year margin-0">
+                2012
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img class="item-image" src="./images/Letter from Egypt.png" alt="">
+            <div class="item-titles">
+              <p class="item-name margin-0">
+                Letter From Egypt
+              </p>
+              <p class="item-year margin-0">
+                2008
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img class="item-image" src="./images/Vogts Villa.png" alt="">
+            <div class="item-titles">
+              <p class="item-name margin-0">
+                Vogts Vills
+              </p>
+              <p class="item-year margin-0">
+                1996
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img class="item-image" src="./images/Wild Seed.png" alt="">
+            <div class="item-titles">
+              <p class="item-name margin-0">
+                Wild Seed
+              </p>
+              <p class="item-year margin-0">
+                1995
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img class="item-image" src="./images/Poetenes Evangelium.png" alt="">
+            <div class="item-titles">
+              <p class="item-name margin-0">
+                Poetenes Evangelium
+              </p>
+              <p class="item-year margin-0">
+                1993
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="page-similar">
+        <h2 class="main-title margin-0 margin-top-100 margin-bottom-48">
+          Похожие исполнители
+        </h2>
+        <div class="similars items">
+          <div class="item">
+            <img class="item-image" src="./images/A-ha.png" alt="">
+            <div class="item-titles">
+              <p class="item-name margin-0">
+                A-Ha
+              </p>
+              <p class="item-year margin-0">
+                417 086 поклонников
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img class="item-image" src="./images/Tears for Fears.png" alt="">
+            <div class="item-titles">
+              <p class="item-name margin-0">
+                Tears For Fears
+              </p>
+              <p class="item-year margin-0">
+                434 086 поклонников
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img class="item-image" src="./images/Duran Duran.png" alt="">
+            <div class="item-titles">
+              <p class="item-name margin-0">
+                Duran Duran
+              </p>
+              <p class="item-year margin-0">
+                631 071 поклонник
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img class="item-image" src="./images/Jack Savoretti.png" alt="">
+            <div class="item-titles">
+              <p class="item-name margin-0">
+                Jack Savoretti
+              </p>
+              <p class="item-year margin-0">
+                26 857 поклонников
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img class="item-image" src="./images/Keane.png" alt="">
+            <div class="item-titles">
+              <p class="item-name margin-0">
+                Keane
+              </p>
+              <p class="item-year margin-0">
+                1 704 358 поклонников
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img class="item-image" src="./images/Frank Sinatra.png" alt="">
+            <div class="item-titles">
+              <p class="item-name margin-0">
+                Frank Sinatra
+              </p>
+              <p class="item-year margin-0">
+                1 653 882 поклонников
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img class="item-image" src="./images/Paul Young.png" alt="">
+            <div class="item-titles">
+              <p class="item-name margin-0">
+                Paul Young
+              </p>
+              <p class="item-year margin-0">
+                50 329 поклонников
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img class="item-image" src="./images/Chris Rea.png" alt="">
+            <div class="item-titles">
+              <p class="item-name margin-0">
+                Chris Rea
+              </p>
+              <p class="item-year margin-0">
+                73 351 поклонников
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
 
   <footer class="footer padding-top-60">
     <div class="container">
@@ -152,22 +419,22 @@
           <ul class="footer-info-list social margin-0 padding-0 list-none d-flex">
             <li class="d-flex">
               <a href="#" class="footer-info-link">
-                <img class="link-image" src="./images/Google+.png" alt="">
+                <img src="./images/Google+.png" alt="">
               </a>
             </li>
             <li class="d-flex">
               <a href="#" class="footer-info-link">
-                <img class="link-image" src="./images/Twitter.png" alt="">
+                <img src="./images/Twitter.png" alt="">
               </a>
             </li>
             <li class="d-flex">
               <a href="#" class="footer-info-link">
-                <img class="link-image" src="./images/Facebook.png" alt="">
+                <img src="./images/Facebook.png" alt="">
               </a>
             </li>
             <li class="d-flex">
               <a href="#" class="footer-info-link">
-                <img class="link-image" src="./images/Instagram.png" alt="">
+                <img src="./images/Instagram.png" alt="">
               </a>
             </li>
           </ul>

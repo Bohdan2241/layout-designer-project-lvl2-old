@@ -7,12 +7,17 @@
 @import "common";
 
 // Blocks
-@import "blocks/background-intro";
 @import "blocks/header";
+@import "blocks/footer";
+
+// Blocks // Main page
 @import "blocks/intro";
-//
 @import "blocks/subscribes";
 @import "blocks/news";
 @import "blocks/mobile-app";
+
+// Blocks // Artist page
+@import "blocks/artist";
+@import "blocks/popular-tracks";
+@import "blocks/similars";
 //
-@import "blocks/footer";
