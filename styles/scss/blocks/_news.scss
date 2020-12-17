@@ -73,7 +73,7 @@
   line-height: 24px;
 
   @include media(">laptop") {
-    margin-top: 30px; // как можно разделить
+    margin-top: 30px;
   }
 
   @include media("<=laptop") {
