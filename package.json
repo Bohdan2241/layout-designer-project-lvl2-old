@@ -1,8 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "start": "gulp",
-    "fixstyle": "npx stylelint --fix ./styles/scss/**/*.scss"
+    "start": "gulp"
   },
   "devDependencies": {
     "browser-sync": "^2.26.13",
