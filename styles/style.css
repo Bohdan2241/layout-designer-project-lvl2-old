@@ -145,7 +145,8 @@ body {
   row-gap: 25px; }
 
 .item {
-  margin-right: 50px; }
+  margin-right: 50px;
+  text-decoration: none; }
 
 @media (min-width: 931px) {
   .item-image {
@@ -689,12 +690,17 @@ body {
   line-height: 19px;
   row-gap: 25px; }
 
+.wrap-tracks {
+  display: grid;
+  grid-row-gap: 25px;
+  width: 50%;
+  min-width: 374px; }
+
 .track {
   display: grid;
   grid-column-gap: 15px;
   grid-template-columns: auto 1fr max-content;
-  width: 50%;
-  min-width: 374px; }
+  text-decoration: none; }
 
 .track-image {
   width: 55px;

@@ -10,13 +10,19 @@
   row-gap: 25px;
 }
 
+.wrap-tracks {
+  display: grid;
+  grid-row-gap: 25px;
+  width: 50%;
+  min-width: 374px;
+}
+
 .track {
   display: grid;
   grid-column-gap: 15px;
   grid-template-columns: auto 1fr max-content;
 
-  width: 50%;
-  min-width: 374px;
+  text-decoration: none;
 }
 
 .track-image {
