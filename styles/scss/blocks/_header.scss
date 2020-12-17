@@ -107,7 +107,13 @@
 .search-input {
   width: 100%;
   padding: 5px 10px;
+}
 
+.search-input::placeholder {
+  text-transform: uppercase;
+}
+
+.search-input-dark {
   color: #757575;
   font-size: 13px;
   font-family: $font-arial;
@@ -117,8 +123,4 @@
 
   border-radius: 50px;
   cursor: pointer;
-}
-
-.search-input::placeholder {
-  text-transform: uppercase;
 }
