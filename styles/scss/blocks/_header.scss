@@ -4,15 +4,15 @@
   display: grid;
 
   @include media(">=laptop") {
-    grid-template-columns: max-content 1fr max-content;
 
-    column-gap: 88px;
+    grid-column-gap: 88px;
+    grid-template-columns: max-content 1fr max-content;
   }
 
   @include media("<laptop") {
-    grid-template-rows: max-content max-content max-content;
 
-    row-gap: 18px;
+    grid-row-gap: 18px;
+    grid-template-rows: max-content max-content max-content;
   }
 }
 
@@ -20,13 +20,13 @@
 
 .logo {
   display: grid;
+  grid-column-gap: 16px;
 
   grid-template-columns: max-content max-content;
 
   align-self: center;
 
   text-decoration: none;
-  column-gap: 16px;
 }
 
 .logo-image {
@@ -59,14 +59,14 @@
   list-style: none;
 
   @include media(">=laptop") {
-    grid-template-columns: repeat(4, min-content);
 
-    column-gap: 24px;
+    grid-column-gap: 24px;
+    grid-template-columns: repeat(4, min-content);
   }
 
   @include media("<laptop") {
+    grid-row-gap: 3px;
     grid-template-rows: repeat(4, min-content);
-    row-gap: 3px;
   }
 }
 

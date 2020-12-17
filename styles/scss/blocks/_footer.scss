@@ -6,26 +6,26 @@
 
 // Info
 
-.info {
+.footer-info {
   display: grid;
 
   @include media(">=desktop") {
-    grid-template-columns: repeat(4, max-content);
 
-    column-gap: 100px;
+    grid-column-gap: 100px;
+    grid-template-columns: repeat(4, max-content);
   }
 
   @include media(">tablet", "<desktop") {
-    grid-template-columns: repeat(2, max-content);
+    grid-row-gap: 50px;
 
-    column-gap: 50px;
-    row-gap: 50px;
+    grid-column-gap: 50px;
+    grid-template-columns: repeat(2, max-content);
   }
 
   @include media("<=tablet") {
-    grid-template-rows: repeat(4, max-content);
 
-    row-gap: 30px;
+    grid-row-gap: 30px;
+    grid-template-rows: repeat(4, max-content);
   }
 }
 
@@ -63,15 +63,15 @@
   display: grid;
 
   @include media(">tablet") {
-    grid-template-columns: repeat(5, min-content);
 
-    column-gap: 15px;
+    grid-column-gap: 15px;
+    grid-template-columns: repeat(5, min-content);
   }
 
   @include media("<=tablet") {
-    grid-template-rows: repeat(5, min-content);
 
-    row-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-rows: repeat(5, min-content);
   }
 }
 

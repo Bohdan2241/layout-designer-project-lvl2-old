@@ -1,20 +1,26 @@
 // Popular tracks
 
 .popular-tracks {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+
+  grid-row-gap: 25px;
 
   font-size: 13px;
   line-height: 19px;
 
-  row-gap: 25px;
+  @include media(">808px") {
+    grid-template-columns: repeat(2, auto);
+  }
 }
 
 .wrap-tracks {
   display: grid;
   grid-row-gap: 25px;
-  width: 50%;
   min-width: 374px;
+
+  @include media("<=808px") {
+    max-width: 374px;
+  }
 }
 
 .track {
@@ -30,7 +36,7 @@
   height: 55px;
 }
 
-.titles {
+.track-titles {
   align-self: center;
 
   color: $grey;

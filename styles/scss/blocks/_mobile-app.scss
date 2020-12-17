@@ -5,14 +5,14 @@
 
   @include media("<=laptop") {
     flex-direction: column;
-    row-gap: 16px;
+    grid-row-gap: 16px;
   }
 }
 
 .mobile-app-content {
   display: grid;
+  grid-row-gap: 16px;
   grid-template-rows: repeat(3, min-content);
-  row-gap: 16px;
 
   @include media("<=laptop") {
     order: 2;
