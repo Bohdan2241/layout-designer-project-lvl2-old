@@ -286,10 +286,6 @@ body {
   line-height: 27px;
   text-transform: uppercase; }
 
-.footer-info-list {
-  display: flex;
-  flex-direction: column; }
-
 .footer-info-link {
   align-self: center;
   color: #e0e0e0;
@@ -298,8 +294,9 @@ body {
   text-decoration: none; }
 
 .social {
-  flex-direction: row;
-  column-gap: 24px; }
+  display: grid;
+  grid-column-gap: 24px;
+  grid-template-columns: repeat(4, max-content); }
 
 .footer-menu {
   padding-top: 40px;
@@ -657,15 +654,16 @@ body {
   line-height: 24px; }
 
 .wrap-buttons {
-  display: flex;
+  display: grid;
   margin-top: 48px; }
   @media (min-width: 769px) {
     .wrap-buttons {
-      column-gap: 24px; } }
+      grid-column-gap: 24px;
+      grid-template-columns: max-content max-content; } }
   @media (max-width: 768px) {
     .wrap-buttons {
-      flex-direction: column;
-      row-gap: 24px; } }
+      grid-row-gap: 24px;
+      grid-template-rows: max-content max-content; } }
 
 .btn-artist {
   width: 200px;

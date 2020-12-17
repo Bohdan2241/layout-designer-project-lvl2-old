@@ -36,11 +36,6 @@
   text-transform: uppercase;
 }
 
-.footer-info-list {
-  display: flex;
-  flex-direction: column;
-}
-
 .footer-info-link {
   align-self: center;
 
@@ -52,9 +47,9 @@
 }
 
 .social {
-  flex-direction: row;
-
-  column-gap: 24px;
+  display: grid;
+  grid-column-gap: 24px;
+  grid-template-columns: repeat(4, max-content);
 }
 
 // Menu
