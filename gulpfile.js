@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
+const cssnano = require('gulp-cssnano');
 const rename = require('gulp-rename');
 const stylelint = require('gulp-stylelint');
 const htmlhint = require('gulp-htmlhint');
@@ -37,7 +38,8 @@ exports.lintHtml = lintHtml;
 const styles = () => {
   return gulp.src('./styles/scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(rename('style.css'))
+    .pipe(cssnano())
+    .pipe(rename('style.min.css'))
     .pipe(gulp.dest('./styles/'))
     .pipe(sync.stream());
 };
