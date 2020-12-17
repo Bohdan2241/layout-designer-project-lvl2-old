@@ -1,7 +1,7 @@
 // Intro
 
 .intro {
-  padding-bottom: 200px;
+  padding-bottom: 205px;
 
   color: $white;
   text-align: center;
@@ -104,7 +104,7 @@
   padding: 15px 18px;
 
   @include media(">tablet") {
-    min-width: 270px;
+    min-width: 273px;
   }
 
   @include media("<=tablet") {
