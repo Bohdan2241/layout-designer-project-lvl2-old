@@ -165,7 +165,6 @@ body {
 
 .item-name {
   color: #fff;
-  font-weight: bold;
   font-size: 18px;
   line-height: 27px; }
 
@@ -429,7 +428,7 @@ body {
 .subscribes-plans {
   display: flex;
   flex-wrap: wrap;
-  gap: 45px;
+  gap: 39px;
   justify-content: center; }
 
 .free-item {
@@ -686,7 +685,6 @@ body {
 .popular-tracks {
   display: flex;
   flex-wrap: wrap;
-  color: #e0e0e0;
   font-size: 13px;
   line-height: 19px;
   row-gap: 25px; }
@@ -703,14 +701,17 @@ body {
   height: 55px; }
 
 .titles {
-  align-self: center; }
+  align-self: center;
+  color: #e0e0e0; }
 
 .track-name {
   color: #fff;
   font-weight: bold; }
 
 .track-time {
-  align-self: center; }
+  align-self: center;
+  color: #e0e0e0;
+  text-decoration: none; }
   @media (min-width: 808px) {
     .track-time {
       margin-right: 49px; } }

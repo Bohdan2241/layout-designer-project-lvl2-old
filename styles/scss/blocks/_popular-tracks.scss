@@ -4,7 +4,6 @@
   display: flex;
   flex-wrap: wrap;
 
-  color: $grey;
   font-size: 13px;
   line-height: 19px;
 
@@ -27,6 +26,8 @@
 
 .titles {
   align-self: center;
+
+  color: $grey;
 }
 
 .track-name {
@@ -36,6 +37,10 @@
 
 .track-time {
   align-self: center;
+
+  color: $grey;
+
+  text-decoration: none;
 
   @include media(">=808px") {
     margin-right: 49px;
