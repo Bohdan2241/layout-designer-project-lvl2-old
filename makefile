@@ -1,5 +1,5 @@
 fix:
-	npx stylelint --fix ./styles/scss/**/*.scss
+	npx stylelint --fix ./src/scss/**/*.scss
 
 deploy:
-	npx surge ./
+	npx surge ./src/
