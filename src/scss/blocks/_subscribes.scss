@@ -7,14 +7,16 @@
 
 .subscribes-plans {
   display: grid;
-  grid-gap: 39px;
+
   justify-content: center;
 
   @include media(">=1260px") {
+    grid-column-gap: 39px;
     grid-template-columns: repeat(3, max-content);
   }
 
   @include media(">=847px", "<1260px") {
+    grid-gap: 50px;
     grid-template-columns: repeat(2, max-content);
   }
 }
