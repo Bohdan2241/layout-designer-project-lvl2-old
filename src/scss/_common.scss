@@ -17,21 +17,10 @@ body {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1240px;
 
   margin: 0 auto;
-
-  @include media(">=large-desktop") {
-    padding: 0 120px;
-  }
-
-  @include media(">tablet", "<large-desktop") {
-    padding: 0 30px;
-  }
-
-  @include media("<=tablet") {
-    padding: 0 20px;
-  }
+  padding: 0 20px;
 }
 
 .h1 {
