@@ -19,6 +19,10 @@
     grid-gap: 50px;
     grid-template-columns: repeat(2, max-content);
   }
+
+  @include media("<847px") {
+    grid-row-gap: 50px;
+  }
 }
 
 .plan-item-premium {
