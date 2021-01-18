@@ -5,7 +5,6 @@
 
   @include media("<=laptop") {
     flex-direction: column;
-    grid-row-gap: 16px;
   }
 }
 

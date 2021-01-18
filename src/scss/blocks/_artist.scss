@@ -3,8 +3,6 @@
 .artist {
   padding-bottom: 224px;
 
-  color: $white;
-
   @include media(">laptop") {
     margin-top: 200px;
   }

@@ -49,7 +49,6 @@
 }
 
 .news-content {
-  min-width: 374px;
   max-width: 576px;
 
   @include media("<=laptop") {

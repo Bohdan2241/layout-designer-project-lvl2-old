@@ -1,6 +1,6 @@
 // Header
 
-.header {
+.header-grid {
   display: grid;
 
   @include media(">=laptop") {
@@ -54,10 +54,8 @@
   }
 }
 
-.header-menu-list {
+.header-menu-grid {
   display: grid;
-
-  list-style: none;
 
   @include media(">=laptop") {
 
@@ -93,8 +91,9 @@
 
 // Search
 
-.search {
+.search-input {
   width: 100%;
+  padding: 5px 10px;
 
   @include media(">=laptop") {
     min-width: 248px;
@@ -103,11 +102,6 @@
   @include media("<laptop") {
     max-width: 374px;
   }
-}
-
-.search-input {
-  width: 100%;
-  padding: 5px 10px;
 }
 
 .search-input::placeholder {
